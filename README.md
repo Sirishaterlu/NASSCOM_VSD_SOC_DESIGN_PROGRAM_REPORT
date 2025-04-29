@@ -738,7 +738,7 @@ run_placement
 run_cts
 ```
 After the cts , new .v file is creted in the synthesis results folder 
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2017-26-48.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-20.png)
 
 ### SKY130_D4_SK4 - Timing analysis with real clocks using openSTA
 ### April/2025
@@ -790,11 +790,11 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 exit
 ```
 cmd runs:
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-21.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-19.png)
 hold slack report
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-30.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-18.png)
 setup slack report
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-41.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-17.png)
 
 ##### removing "sky130_fd_sc_hd__clkbuf_1'" from CTS_CLK_BUFFER_LIST and reruning the cts to see the results
 
@@ -868,7 +868,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 hold slack
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/e66d9ad5-6d43-49d3-961b-08af73b1a117.jpg)
 setup slack and skew values
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2016-04-37.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-16.png)
 
 before removal of "sky130_fd_sc_hd__clkbuf_1":
 |Slack|Value|
@@ -908,7 +908,7 @@ echo $::env(CURRENT_DEF)
 gen_pdn
 ```
 pdn.def generated
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-15.png)
 view the pdn with 
 ```bash
 
@@ -922,7 +922,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 Signal routing
 ROUTING_STRATEGY variable isnt available, routing optimization iterations (ROUTING_OPT_ITERS) has a default value of 64
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-47-51.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-14.png)
 ```tcl
 run_routing
 ```
@@ -937,10 +937,10 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ```
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%205-3.jpg)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-51-57.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-12.png)
 
 Post route the SPEF extraction and STA happens with `run_routing` command
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-43.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-13.png)
 
 to verify the results open the OpenRoad tool
 
@@ -981,7 +981,7 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 exit
 ```
 cmds
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-51-50.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-11.png)
 hold
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%205-2.jpg)
 setup
