@@ -663,15 +663,15 @@ sta pre_sta.conf
 ```
 screenshots from the run
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-51-34.png)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-52-34.png)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-52-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%204.jpg)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/0bf9343e-b13a-42f5-909e-04550197fad7.jpg)
 
 ### Eco implementation
 
 * identify problematic cells from the design 
 The oai cell seems to be drving 4 cells
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-11-33.png)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-11-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/30139ce0-b8bc-48f9-aeb6-4f7c49e92cf1.jpg)
 ```tcl
 # Reports all the connections to a net
 report_net -connections _04373_
@@ -693,14 +693,14 @@ Nand gate of strength 2 is driving three cells
 * changing the drive strenght to 4
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-34-05.png)
 the slack reduced to -4.5555 from -4.5886
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-35-09.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/30139ce0-b8bc-48f9-aeb6-4f7c49e92cf1.jpg)
 
 OAI cell of drive strenght 2 has more delay:
 * changing drive stenght to 3 returns the message "Warning: liberty cell 'sky130_fd_sc_hd__o21bai_3' not found."
 * changing the drive strenght to 4
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-43-17.png)
 The slack reduced from -4.5555 to -4.5060
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-43-30.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/30139ce0-b8bc-48f9-aeb6-4f7c49e92cf1.jpg)
 
 to check the timimg through a cell we changed
 ```tcl
@@ -866,7 +866,7 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 ```
 hold slack
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2015-24-35.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/e66d9ad5-6d43-49d3-961b-08af73b1a117.jpg)
 setup slack and skew values
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2016-04-37.png)
 
@@ -916,8 +916,8 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../merged.lef def read 12-pdn.def &
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-33-39.png)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-34-34.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/a40fed0b-fafb-47bd-9311-18681d5a8e9c.jpg)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/7625a3e6-ebad-4667-b4ad-dcc48d3968b3.jpg)
 
 
 Signal routing
@@ -936,7 +936,7 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
 
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-49-56.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%205-3.jpg)
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-51-57.png)
 
 Post route the SPEF extraction and STA happens with `run_routing` command
@@ -983,9 +983,9 @@ exit
 cmds
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-51-50.png)
 hold
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-52-16.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%205-2.jpg)
 setup
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-52-25.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%205-1.jpg)
 
 Final Slack values
 
