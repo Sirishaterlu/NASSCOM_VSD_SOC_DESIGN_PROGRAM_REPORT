@@ -487,9 +487,9 @@ save sky130_vsdinv.mag
 # open the design in new gui and write lef
 write lef <optional name, default is the design name in the gui>
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2013-09-04.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-37.png)
 * copy `lib` and `lef` files to `design/<designanme>/src` folder
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2013-24-05.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-36.png)
 * edit the `design/config.tcl` file to include the paths to the new `lib`, `lef` in src folder. This ensures openlane flow picks the new lib and lef
 ```tcl
 set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
@@ -525,7 +525,7 @@ run_synthesis
 The chip area info
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-33.png)
 The WNS and TNS for the design
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-37.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-35.png)
 The custom `sky130_vsdinv` in `temp/the merged.lef` indicating the cell was successfully used during synthesis
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-15-58.png)
 
@@ -558,17 +558,17 @@ run synthesis to take all changes
 ```tcl
 run_synthesis
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-13-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-34.png)
 
 the TNS and WNS seems has become 0.0, but the chip area has increased
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-17-44.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-33.png)
 
 * Next run the floorplan
 ```
 run_floorplan
 ```
 This gives an error in the run and error log in openroad shows this:
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-54-22.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-32.png)
 but there are no large macros. to circumvent this we can run each step in floorplan individually 
 
 ```
@@ -576,7 +576,7 @@ init_floorplan
 place_io
 tap_decap_or
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-23-54.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-31.png)
 
 ```
 run_placement
@@ -591,20 +591,20 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-09-16.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-30.png)
 
 locating `sky130_vsdinv` instance in the implemented design
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-12-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-29.png)
 
 we can see the connectivity by selcting the `sky130_vsdinv` instance by keeping cursor  over it and pressing 's'. To see teh connections enter the cmd `expand` in tkconsole of `magic`
 
 ```tcl
 expand
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-15-59.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-28.png)
 
 ### SKY130_D4_SK2 - Timing Analysis with Ideal Clocks Using OpenSTA
-#### April/03/2025
+#### April/2025
 *Setup Analysis:*
 * Setup analysis determines the minimum time a data signal must be stable before the active clock edge to ensure that the flip-flop can capture the data correctly. If this setup time is not met, the data may be incorrectly latched.
 *Clock Jitter:*
@@ -616,7 +616,7 @@ expand
 Let me know if you need further
 ### Lab to config the tool to run opensta post synthesis
 create `pre_sta.conf` to define the files to be loaded to the opensta for analysis in diffrent corners
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-46-10.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-27.png)
 create `mybase.sdc` file to define timimng contraints info for the sta tool. place it in `designs/picorv32a/src`
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-39-17.png)
 now run the opensta tool
@@ -626,9 +626,9 @@ sta pre_sta.conf
 the analysis will be done and the results will be printed in the terminal
 
 min (hold)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-48-08.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-26.png)
 max (setup)
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-48-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-25.png)
 
 #### Lab:  Optimization
 *Reopen the openlane to implemmemt any changes
@@ -662,7 +662,7 @@ open new sta cmdline in new terminal
 sta pre_sta.conf
 ```
 screenshots from the run
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-51-34.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-24.png)
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/day%204.jpg)
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/0bf9343e-b13a-42f5-909e-04550197fad7.jpg)
 
@@ -670,7 +670,7 @@ screenshots from the run
 
 * identify problematic cells from the design 
 The oai cell seems to be drving 4 cells
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-11-33.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-22.png)
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/30139ce0-b8bc-48f9-aeb6-4f7c49e92cf1.jpg)
 ```tcl
 # Reports all the connections to a net
@@ -698,7 +698,7 @@ the slack reduced to -4.5555 from -4.5886
 OAI cell of drive strenght 2 has more delay:
 * changing drive stenght to 3 returns the message "Warning: liberty cell 'sky130_fd_sc_hd__o21bai_3' not found."
 * changing the drive strenght to 4
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-43-17.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-21.png)
 The slack reduced from -4.5555 to -4.5060
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/30139ce0-b8bc-48f9-aeb6-4f7c49e92cf1.jpg)
 
