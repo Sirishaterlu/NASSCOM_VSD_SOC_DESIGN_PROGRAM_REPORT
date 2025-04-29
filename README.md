@@ -343,7 +343,7 @@ ext2spice
 ```
 ![](https://github.com/Sirishaterlu/report/blob/main/File/21.jpeg)
 
-### SKY130_D3_SK3 - Sky130 Tech File Labs (April/31/2025)
+### SKY130_D3_SK3 - Sky130 Tech File Labs (April/2025)
 #### ngspice sim for cell characterization
 
 * After the cell layout is created we need to do characterization (timing , noise)
