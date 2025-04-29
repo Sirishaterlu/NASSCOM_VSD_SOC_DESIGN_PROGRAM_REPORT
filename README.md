@@ -206,7 +206,7 @@ and
 Aspect\ Ratio= \frac{Heigth of core}{Width of core}
 ```
 * with abs min area known, we need to account for area occupied by routing metals.
-## (March/28/2025)
+## (April/2025)
 * **🧱 Preplaced Cells** : top level logic is broken into mutiple cuts and are implemented separately
 * Large reusable blocks (e.g., ALUs, comparators, muxes) can be implemented as preplaced IP blocks.
 *These cells are black-boxed and fixed in the layout before regular cell placement.
@@ -297,9 +297,9 @@ viewing the def generated in `magic`
 
 
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
-### Lab (MArch/30/2025)
+### Lab (April/2025)
 
-* Clone custom inverter standard cell design from github repository: [nickson-jose vsdstdcelldesign](https://github.com/Sirishaterlu/report/blob/main/File/14.jpeg).
+* Clone custom inverter standard cell design from github repository: [nickson-jose vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign).
 * Load the custom inverter layout in magic and explore.
 ```bash
 # Enter the Openlane work dir 
@@ -343,7 +343,7 @@ ext2spice
 ```
 ![](https://github.com/Sirishaterlu/report/blob/main/File/21.jpeg)
 
-### SKY130_D3_SK3 - Sky130 Tech File Labs (March/31/2025)
+### SKY130_D3_SK3 - Sky130 Tech File Labs (April/31/2025)
 #### ngspice sim for cell characterization
 
 * After the cell layout is created we need to do characterization (timing , noise)
@@ -446,7 +446,7 @@ Fall\ Cell\ Delay = 4.0780 - 4.0501 = 0.0279\ ns = 27.9\ ps
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2018-23-20.png)
 
 
-### APRIL/1/2025
+### APRIL/2025
 
 download the drc_test folder in home directory
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-01%2013-21-44.png)
@@ -473,7 +473,7 @@ open the tech file `sky130A.tech` in the same folder and edit the missing rule: 
 
 ## Sky130 Day 4 - Pre-layout Timing Analysis and Importance of Good Clock Tree
 # SKY130_D4_SK1 - Timing Modeling Using Delay Tables
-### April/2/2025
+### April/2025
 * A Timing Table is used to model the delay of a cell relative to the input transition and output load. This helps in estimating how long a signal takes to propagate through the cell, depending on how fast the input changes and the load it drives at the output.
 * To insert the custom design (e.g., sky130_vsdinv) into the OpenLane flow, we need the characterized library (which includes the timing, power, and area data) and LEF (Library Exchange Format) files. These files contain information about the cells, their layout, and other physical attributes necessary for physical design tools.
 * These library files are usually obtained and generated from the Magic GUI, which can extract the required timing and parasitic data from the design layout.
@@ -741,7 +741,7 @@ After the cts , new .v file is creted in the synthesis results folder
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2017-26-48.png)
 
 ### SKY130_D4_SK4 - Timing analysis with real clocks using openSTA
-### April/04/2025
+### April/2025
 
 * openroad is is the tool around which openlane was built, openroad has inbuit sta tool which we will utilze to analyse timimg.
 ```bash
