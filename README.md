@@ -331,7 +331,7 @@ Drain to drain connection of nmos and pmos
 Pwr to Pmos connection
 ![](https://github.com/Sirishaterlu/report/blob/main/File/20.png)
 Gnd to Nmos connection
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-30%2017-35-01.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-30%2017-35-01.png)
 
 * Next extract the inv cell layout
 ```
@@ -361,7 +361,7 @@ ext2spice
  * Add power (VDD) and ground (VSS) connections.
  * Connect the input signal and output nodes properly.
  * Define the type of simulation (in this case, transient analysis) and set the parameters for it.
-  ![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-17.png) 
+  ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-17.png) 
 Commands for ngspice simulation
 
 ```bash
@@ -372,7 +372,7 @@ ngspice sky130_inv.spice
 plot y vs time a
 # plotting output vs time and input
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-31%2016-57-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2016-57-45.png)
 
 
 
@@ -392,7 +392,7 @@ Rise\ transition\ time = Time\ taken\ for\ output\ to\ rise\ to\ 80\% - Time\ ta
 ```math
 Rise\ transition\ time = 2.2468 - 2.1824 = 0.06396\ ns = 64.4\ ps
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-31%2018-07-10.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2018-07-10.png)
 
 Fall transition time calculation
 
@@ -409,7 +409,7 @@ Fall\ transition\ time = Time\ taken\ for\ output\ to\ fall\ to\ 20\% - Time\ ta
 Fall\ transition\ time = 4.0955 - 4.0530 = 42.5\ ps
 ```
 
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-31%2018-11-20.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2018-11-20.png)
 
 Rise Cell Delay Calculation
 
@@ -426,7 +426,7 @@ Rise\ Cell\ Delay = Time\ taken\ for\ output\ to\ rise\ to\ 50\% - Time\ taken\ 
 Rise\ Cell\ Delay = 2.21 - 2.15 = 0.06\ ns = 60\ ps
 
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-31%2018-18-42.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2018-18-42.png)
 
 Fall Cell Delay Calculation
 
@@ -443,13 +443,13 @@ Fall\ Cell\ Delay = Time\ taken\ for\ output\ to\ fall\ to\ 50\% - Time\ taken\ 
 ```math
 Fall\ Cell\ Delay = 4.0780 - 4.0501 = 0.0279\ ns = 27.9\ ps
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-31%2018-23-20.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-03-31%2018-23-20.png)
 
 
 ### APRIL/1/2025
 
 download the drc_test folder in home directory
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-01%2013-21-44.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-01%2013-21-44.png)
 
 ```bash
 cd drc_tests
@@ -468,7 +468,7 @@ As example for drc rule fxing open poly.mag in magic and zoomin on poly.9 error,
 open the tech file `sky130A.tech` in the same folder and edit the missing rule: (the redbox in images below are the edited rules)
 ![](https://github.com/Sirishaterlu/report/blob/main/File/23.png)
 ![](https://github.com/Sirishaterlu/report/blob/main/File/24.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-01%2020-02-47.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-01%2020-02-47.png)
 
 
 ## Sky130 Day 4 - Pre-layout Timing Analysis and Importance of Good Clock Tree
@@ -487,9 +487,9 @@ save sky130_vsdinv.mag
 # open the design in new gui and write lef
 write lef <optional name, default is the design name in the gui>
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2013-09-04.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2013-09-04.png)
 * copy `lib` and `lef` files to `design/<designanme>/src` folder
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2013-24-05.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2013-24-05.png)
 * edit the `design/config.tcl` file to include the paths to the new `lib`, `lef` in src folder. This ensures openlane flow picks the new lib and lef
 ```tcl
 set ::env(LIB_SYNTH) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc_hd__typical.lib"
@@ -499,7 +499,7 @@ set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc
 
 set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-29.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-29.png)
 
 * open the Openlane terminal as before and open a design
 ```
@@ -523,15 +523,15 @@ run_synthesis
 ```
 * observe the reports for the default run of synthesis
 The chip area info
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-33.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-33.png)
 The WNS and TNS for the design
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-37.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-37.png)
 The custom `sky130_vsdinv` in `temp/the merged.lef` indicating the cell was successfully used during synthesis
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2020-15-58.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-15-58.png)
 
 * To improve the timing of the design during synthesis, we can alter some of the variables (like SYNTH_SIZING, SYNTH_STRATEGY, SYNTH_BUFFERING from `configurations/README.md`) to get desired results
 Variable information in `configurations/README.md`
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2019-42-55.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2019-42-55.png)
 Changing the variables in openlane terminal
 ```tcl
 # Command to display current value of variable SYNTH_STRATEGY
@@ -552,23 +552,23 @@ set ::env(SYNTH_SIZING) 1
 # Command to display current value of variable SYNTH_DRIVING_CELL to check whether it's the proper cell or not
 echo $::env(SYNTH_DRIVING_CELL)
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-35.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-35.png)
 
 run synthesis to take all changes
 ```tcl
 run_synthesis
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2020-13-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-13-52.png)
 
 the TNS and WNS seems has become 0.0, but the chip area has increased
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2020-17-44.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-17-44.png)
 
 * Next run the floorplan
 ```
 run_floorplan
 ```
 This gives an error in the run and error log in openroad shows this:
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2020-54-22.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-54-22.png)
 but there are no large macros. to circumvent this we can run each step in floorplan individually 
 
 ```
@@ -576,7 +576,7 @@ init_floorplan
 place_io
 tap_decap_or
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2020-23-54.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2020-23-54.png)
 
 ```
 run_placement
@@ -591,17 +591,17 @@ cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/24-03
 # Command to load the placement def in magic tool
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2021-09-16.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-09-16.png)
 
 locating `sky130_vsdinv` instance in the implemented design
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2021-12-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-12-52.png)
 
 we can see the connectivity by selcting the `sky130_vsdinv` instance by keeping cursor  over it and pressing 's'. To see teh connections enter the cmd `expand` in tkconsole of `magic`
 
 ```tcl
 expand
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-02%2021-15-59.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2021-15-59.png)
 
 ### SKY130_D4_SK2 - Timing Analysis with Ideal Clocks Using OpenSTA
 #### April/03/2025
@@ -616,9 +616,9 @@ expand
 Let me know if you need further
 ### Lab to config the tool to run opensta post synthesis
 create `pre_sta.conf` to define the files to be loaded to the opensta for analysis in diffrent corners
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2014-46-10.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-46-10.png)
 create `mybase.sdc` file to define timimng contraints info for the sta tool. place it in `designs/picorv32a/src`
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2014-39-17.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-39-17.png)
 now run the opensta tool
 ```bash
 sta pre_sta.conf
@@ -626,9 +626,9 @@ sta pre_sta.conf
 the analysis will be done and the results will be printed in the terminal
 
 min (hold)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2014-48-08.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-48-08.png)
 max (setup)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2014-48-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2014-48-45.png)
 
 #### Lab:  Optimization
 *Reopen the openlane to implemmemt any changes
@@ -662,16 +662,16 @@ open new sta cmdline in new terminal
 sta pre_sta.conf
 ```
 screenshots from the run
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2015-51-34.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2015-52-34.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2015-52-52.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-51-34.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-52-34.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2015-52-52.png)
 
 ### Eco implementation
 
 * identify problematic cells from the design 
 The oai cell seems to be drving 4 cells
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-11-33.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-11-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-11-33.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-11-45.png)
 ```tcl
 # Reports all the connections to a net
 report_net -connections _04373_
@@ -686,21 +686,21 @@ replace_cell _22324_ sky130_fd_sc_hd__o21ai_4
 report_checks -fields {net cap slew input_pins} -digits 4
 ```
 The slack improved from -4.62 to -4.5886
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-26-41.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-26-41.png)
 
 Nand gate of strength 2 is driving three cells
 * changing drive stenght to 3 returns the message "Warning: liberty cell 'sky130_fd_sc_hd__nand2_3' not found."
 * changing the drive strenght to 4
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-34-05.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-34-05.png)
 the slack reduced to -4.5555 from -4.5886
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-35-09.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-35-09.png)
 
 OAI cell of drive strenght 2 has more delay:
 * changing drive stenght to 3 returns the message "Warning: liberty cell 'sky130_fd_sc_hd__o21bai_3' not found."
 * changing the drive strenght to 4
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-43-17.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-43-17.png)
 The slack reduced from -4.5555 to -4.5060
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2016-43-30.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2016-43-30.png)
 
 to check the timimg through a cell we changed
 ```tcl
@@ -738,7 +738,7 @@ run_placement
 run_cts
 ```
 After the cts , new .v file is creted in the synthesis results folder 
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-03%2017-26-48.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-03%2017-26-48.png)
 
 ### SKY130_D4_SK4 - Timing analysis with real clocks using openSTA
 ### April/04/2025
@@ -790,11 +790,11 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 exit
 ```
 cmd runs:
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2014-09-21.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-21.png)
 hold slack report
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2014-09-30.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-30.png)
 setup slack report
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2014-09-41.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2014-09-41.png)
 
 ##### removing "sky130_fd_sc_hd__clkbuf_1'" from CTS_CLK_BUFFER_LIST and reruning the cts to see the results
 
@@ -866,9 +866,9 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 
 ```
 hold slack
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2015-24-35.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2015-24-35.png)
 setup slack and skew values
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2016-04-37.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2016-04-37.png)
 
 before removal of "sky130_fd_sc_hd__clkbuf_1":
 |Slack|Value|
@@ -908,7 +908,7 @@ echo $::env(CURRENT_DEF)
 gen_pdn
 ```
 pdn.def generated
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-45.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-45.png)
 view the pdn with 
 ```bash
 
@@ -916,19 +916,19 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../merged.lef def read 12-pdn.def &
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2018-33-39.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2018-34-34.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-33-39.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-34-34.png)
 
 
 Signal routing
 ROUTING_STRATEGY variable isnt available, routing optimization iterations (ROUTING_OPT_ITERS) has a default value of 64
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2017-47-51.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-47-51.png)
 ```tcl
 run_routing
 ```
 files genrated after the routing
 
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2017-20-13.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-20-13.png)
 to visualize the def with magic
 ```bash
 cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-04_09-02/results/routing/
@@ -936,11 +936,11 @@ cd ~/Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/04-
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
 
 ```
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2018-49-56.png)
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2018-51-57.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-49-56.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2018-51-57.png)
 
 Post route the SPEF extraction and STA happens with `run_routing` command
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot-43.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-43.png)
 
 to verify the results open the OpenRoad tool
 
@@ -981,11 +981,11 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pins} -forma
 exit
 ```
 cmds
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2017-51-50.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-51-50.png)
 hold
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2017-52-16.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-52-16.png)
 setup
-![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-04%2017-52-25.png)
+![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-04%2017-52-25.png)
 
 Final Slack values
 
