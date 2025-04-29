@@ -157,9 +157,9 @@ To build open-source ASICs, we need:
   ![Screenshot from 2025-03-27 14-08-29](https://github.com/Sirishaterlu/report/blob/main/File/1.jpeg)
 
 * after this `runs` dir willbe created in the `designs/picorv32a` folder
-  ![Screenshot from 2025-03-27 14-10-38]([File\2.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/2.jpeg))
+  ![Screenshot from 2025-03-27 14-10-38](https://github.com/Sirishaterlu/report/blob/main/File/2.jpeg)
 * inside the run directory the folders will be created as the runs are done
-  ![run dir]([File\3.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/3.jpeg))
+  ![run dir](https://github.com/Sirishaterlu/report/blob/main/File/3.jpeg)
 * there is one `config.tcl` which is diffrent from the other config file discussed before, this one shows which default parameters are being taken bt=y the runs
 * Running synthesis:
   ```bash
@@ -167,7 +167,7 @@ To build open-source ASICs, we need:
   # runs synthesis and abc's
   ```
 * after the run we can check the run dir for the results, logs and reports. `results` folder must have the synthesized netlsit. `reports` folder will have all the reports for synthesis step and `logs` will store all the run logs for synthesis. in the `reports` chronologically latest report is most accurate 
-  ![runs folder content]([File\4.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/4.jpeg))
+  ![runs folder content](https://github.com/Sirishaterlu/report/blob/main/File/4.jpeg)
 
 * At this step we need to do DFF ratio calculation as follows:
 ```math
@@ -227,13 +227,13 @@ Aspect\ Ratio= \frac{Heigth of core}{Width of core}
   # run floorplan
 ```
 floorplan run in terminal
- ![runs folder content]([File\5.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/5.jpeg))
+ ![runs folder content](https://github.com/Sirishaterlu/report/blob/main/File/5.jpeg)
 The run outputs structure in runs folder
 
-![runs folder content]([File\6.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/6.jpeg))
+![runs folder content](https://github.com/Sirishaterlu/report/blob/main/File/6.jpeg)
 
 floorplan def
-![ ]([File\7.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/7.jpeg))
+![ ](https://github.com/Sirishaterlu/report/blob/main/File/7.jpeg)
 
 Floorplan def gives us the actual arae of design as follows:
 ```math
@@ -256,15 +256,15 @@ magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/
 
 ```
 magic Gui
-![]([File\8.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/8.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/8.jpeg)
 * in `magic` gui to center the design for better viewing when in  the gui press "s" and "v", "s" is to select an object (entire design in this case)
 * to zoom into a location: left click mouse for lower (x1,y1) and right mouse click for setting (x2,y2)
 * keep the cursor on the object whose info is needed, then press "s" to select and then in tkconsole write cmd "what"
 Pin info in the GUI
-![]([File\9.jpg](https://github.com/Sirishaterlu/report/blob/main/File/9.jpg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/9.jpg)
 
 diffrent elements in the floorplan
-![]([File\10.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/10.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/10.jpeg)
 
 ### SKY130_D2_SK2 - Library Binding and Placement
 
@@ -277,10 +277,10 @@ diffrent elements in the floorplan
 run_placement
 ```
 output on terminal;
-![](File\10.jpeg)
+![](https://github.com/Sirishaterlu/report/blob/main/File/10.jpeg)
 
 files generated in `results/placement` dir. 
-![]([File\11.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/11.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/11.jpeg)
 
 see the def generated in `magic`
 
@@ -291,15 +291,15 @@ magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/
 ```
 
 viewing the def generated in `magic`
-![]([File\12.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/12.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/12.jpeg)
 
-![]([File\13.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/13.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/13.jpeg)
 
 
 ## Sky130 Day 3 - Design library cell using Magic Layout and ngspice characterization
 ### Lab (MArch/30/2025)
 
-* Clone custom inverter standard cell design from github repository: [nickson-jose vsdstdcelldesign]([File\14.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/14.jpeg)).
+* Clone custom inverter standard cell design from github repository: [nickson-jose vsdstdcelldesign](https://github.com/Sirishaterlu/report/blob/main/File/14.jpeg).
 * Load the custom inverter layout in magic and explore.
 ```bash
 # Enter the Openlane work dir 
@@ -319,17 +319,17 @@ magic -T sky130A.tech sky130_inv.mag &
 # after selection in tkconsole  of magic enter the command "what" to get info on elements selected
 ```
 folder created by git clone
-![]([File\15.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/15.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/15.jpeg)
 magic gui for std cell
-![]([File\16.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/16.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/16.jpeg)
 PMOS identification
-![]([File\17.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/17.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/17.jpeg)
 NMOS identification
-![]([File\18.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/18.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/18.jpeg)
 Drain to drain connection of nmos and pmos
-![]([File\19.png](https://github.com/Sirishaterlu/report/blob/main/File/19.png))
+![](https://github.com/Sirishaterlu/report/blob/main/File/19.png)
 Pwr to Pmos connection
-![]([File\20.png](https://github.com/Sirishaterlu/report/blob/main/File/20.png))
+![](https://github.com/Sirishaterlu/report/blob/main/File/20.png)
 Gnd to Nmos connection
 ![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-03-30%2017-35-01.png)
 
@@ -341,7 +341,7 @@ extract all
 ext2spice
 # creates spice file
 ```
-![]([File\21.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/21.jpeg))
+![](https://github.com/Sirishaterlu/report/blob/main/File/21.jpeg)
 
 ### SKY130_D3_SK3 - Sky130 Tech File Labs (March/31/2025)
 #### ngspice sim for cell characterization
@@ -462,12 +462,12 @@ magic -d XR met3.mag&
 TO draw a layer in magic
 * create a bbox by left right click of mouse
 * select the layer from the layer window by clicking it with mid mouse button
-![]([File\22.png](https://github.com/Sirishaterlu/report/blob/main/File/22.png))
+![](https://github.com/Sirishaterlu/report/blob/main/File/22.png)
 
 As example for drc rule fxing open poly.mag in magic and zoomin on poly.9 error, serch for the error defination in online pdk resource at [skywater pdk readthedocs](https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#poly)
 open the tech file `sky130A.tech` in the same folder and edit the missing rule: (the redbox in images below are the edited rules)
-![]([File\23.png](https://github.com/Sirishaterlu/report/blob/main/File/23.png))
-![]([File\24.png](https://github.com/Sirishaterlu/report/blob/main/File/24.png))
+![](https://github.com/Sirishaterlu/report/blob/main/File/23.png)
+![](https://github.com/Sirishaterlu/report/blob/main/File/24.png)
 ![](https://github.com/sowrabh-adiga/NASSCOM_VSD_SOC_DESIGN_PROGRAM/blob/main/files/Screenshot%20from%202025-04-01%2020-02-47.png)
 
 
