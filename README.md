@@ -154,7 +154,7 @@ To build open-source ASICs, we need:
   prep -design picorv32a
   # prepares Picorv32a design for implemtation
   ```
-  ![Screenshot from 2025-03-27 14-08-29]([File\1.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/1.jpeg))
+  ![Screenshot from 2025-03-27 14-08-29](https://github.com/Sirishaterlu/report/blob/main/File/1.jpeg)
 
 * after this `runs` dir willbe created in the `designs/picorv32a` folder
   ![Screenshot from 2025-03-27 14-10-38]([File\2.jpeg](https://github.com/Sirishaterlu/report/blob/main/File/2.jpeg))
