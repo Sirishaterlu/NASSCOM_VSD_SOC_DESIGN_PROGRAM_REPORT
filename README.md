@@ -499,7 +499,7 @@ set ::env(LIB_TYPICAL) "$::env(OPENLANE_ROOT)/designs/picorv32a/src/sky130_fd_sc
 
 set ::env(EXTRA_LEFS) [glob $::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/src/*.lef]
 ```
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-29.png)
+
 
 * open the Openlane terminal as before and open a design
 ```
@@ -523,7 +523,6 @@ run_synthesis
 ```
 * observe the reports for the default run of synthesis
 The chip area info
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-33.png)
 The WNS and TNS for the design
 ![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot-35.png)
 The custom `sky130_vsdinv` in `temp/the merged.lef` indicating the cell was successfully used during synthesis
@@ -531,7 +530,7 @@ The custom `sky130_vsdinv` in `temp/the merged.lef` indicating the cell was succ
 
 * To improve the timing of the design during synthesis, we can alter some of the variables (like SYNTH_SIZING, SYNTH_STRATEGY, SYNTH_BUFFERING from `configurations/README.md`) to get desired results
 Variable information in `configurations/README.md`
-![](https://github.com/Sirishaterlu/NASSCOM_VSD_SOC_DESIGN_PROGRAM_REPORT/blob/main/File/Screenshot%20from%202025-04-02%2019-42-55.png)
+  
 Changing the variables in openlane terminal
 ```tcl
 # Command to display current value of variable SYNTH_STRATEGY
